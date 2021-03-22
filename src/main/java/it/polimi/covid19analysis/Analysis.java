@@ -103,15 +103,6 @@ public class Analysis {
         long stopTime = System.nanoTime();
         System.out.println((stopTime - startTime) / 1e9);
         spark.stop();
-        //benchmark();
-
-        /*final Dataset<Row> countCountry = dataset
-                .groupBy("dateRep")
-                .agg(count("countriesAndTerritories").name("count"))
-                .agg(max("count"));
-
-        countCountry.show(10);
-        spark.stop();*/
     }
 
 }
